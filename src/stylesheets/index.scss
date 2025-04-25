@@ -9,3 +9,23 @@
   src: local("Bazar"), 
        url("../assets/fonts/Bazar.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald-Regular"), 
+       url("../assets/fonts/Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald-Bold"), 
+       url("../assets/fonts/Oswald-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald-Light"), 
+       url("../assets/fonts/Oswald-Light.ttf") format("truetype");
+  font-weight: lighter;
+}

@@ -10,8 +10,8 @@ function App() {
     <main>
       <Topbar />
       <Banner />
-      <Projects />
       <Skills />  
+      <Projects />
       <Footer />
     </main>
   );
