@@ -2,3 +2,10 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap/scss/utilities';
 @import '~bootstrap/scss/helpers';
+
+
+@font-face {
+  font-family: "Bazar";
+  src: local("Bazar"), 
+       url("../assets/fonts/Bazar.ttf") format("truetype");
+}

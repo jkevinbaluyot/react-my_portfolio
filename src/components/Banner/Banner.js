@@ -1,6 +1,6 @@
 import React from 'react';
 import './Banner.scss';
-import ProfileImage from '../../images/8bit-profile.png'; // Update the path to your image
+import ProfileImage from '../../assets/images/8bit-profile.png'; // Update the path to your image
 import Image from 'react-bootstrap/Image';
 
 const Banner = () => {
