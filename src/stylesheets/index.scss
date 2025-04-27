@@ -45,12 +45,21 @@ main{
   }
 }
 
+body{
+  font-family: 'FredokaOne';
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'FredokaOne', sans-serif;
+  color: $color-elephant;
+}
+
 // Topbar
 
 .topbar{
-  border-bottom: 4px solid $color-elephant;
   font-family: 'FredokaOne';
   background-color: $color-silver_sand;
+  border-bottom: 4px solid $color-elephant;
 
   .nav-link{
     color: $color-elephant;
@@ -66,4 +75,23 @@ main{
     box-shadow: none;
     border: none;
   }
+}
+
+.banner{
+  height: 100px;
+  min-height: 400px;
+
+  img{
+    height: 100px;
+
+    @include media-breakpoint-up(lg) {
+      height: 250px;
+    }
+  }
+}
+
+.section{
+  border-bottom: 4px solid $color-elephant;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
