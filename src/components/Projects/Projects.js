@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Projects = () => {
 
@@ -19,25 +20,38 @@ const Projects = () => {
       description: 'Description of project 3',
       link: 'https://example.com/project3',
     },
+    {
+      title: 'Project 4',
+      description: 'Description of project 4',
+      link: 'https://example.com/project3',
+    },
   ];
 
   return (
-    <div className='text-center projects'>
-      <h2>Projects</h2>
-      <p>Here are some of my projects:</p>
+    <div className='projects section alt-bg'>
+      <Container>
+        <h2>Projects</h2>
+        <p>Here are some of my projects I worked on:</p>
 
-      <ul className='list-unstyled'>
-        {projects.map((project, index) => (
-          <li key={index}>
-            <ProjectItem 
-              title={project.title}
-              description={project.description}
-              link={project.link}
-            >
-            </ProjectItem>
-          </li>
-        ))}
-      </ul>
+        <Row>
+          {
+            projects?.map((project, index) => (
+              <Col 
+                  md={6} 
+                  lg={3} 
+                  key={index}
+              >
+                <ProjectItem 
+                  title={project.title}
+                  description={project.description}
+                  link={project.link}
+                  
+                />
+              </Col>
+            ))
+          }
+        </Row>
+      </Container>
     </div>
   );
 };
