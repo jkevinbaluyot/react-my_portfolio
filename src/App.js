@@ -7,7 +7,9 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <main>
+    <main
+      className='mx-0 m-lg-4 rounded'
+    >
       <Topbar />
       <Banner />
       <Skills />  

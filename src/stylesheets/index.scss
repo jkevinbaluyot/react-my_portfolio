@@ -1,3 +1,4 @@
+@import '_color';
 @import '_variables';
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap/scss/utilities';
@@ -28,4 +29,41 @@
   src: local("Oswald-Light"), 
        url("../assets/fonts/Oswald-Light.ttf") format("truetype");
   font-weight: lighter;
+}
+
+@font-face {
+  font-family: "FredokaOne";
+  src: local("FredokaOne-Regular"), 
+       url("../assets/fonts/FredokaOne-Regular.ttf") format("truetype");
+}
+
+main{
+  overflow: hidden;
+
+  @include media-breakpoint-up(lg) {
+    border: 4px solid $color-elephant;
+  }
+}
+
+// Topbar
+
+.topbar{
+  border-bottom: 4px solid $color-elephant;
+  font-family: 'FredokaOne';
+  background-color: $color-silver_sand;
+
+  .nav-link{
+    color: $color-elephant;
+    padding: 1rem !important;
+
+    &:hover {
+      background-color: $color-elephant;
+      color: white;
+    }
+  }
+
+  .navbar-toggler{
+    box-shadow: none;
+    border: none;
+  }
 }
