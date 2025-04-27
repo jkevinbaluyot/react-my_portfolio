@@ -31,10 +31,9 @@ const Footer = () => {
         <p>Other Links:</p>
         <ul className='footer-links list-unstyled'>
           {footerLinks.map((link, index) => (
-            <li key={index}>
+            <li key={index} className='d-inline-block'>
               <a href={link.url} target="_blank" rel="noopener noreferrer">
                 <span className='me-2'>{link.icon}</span>
-                {link.name}
               </a>
             </li>
           ))}
