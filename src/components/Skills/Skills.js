@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const Skills = () => {
   const skills =[
@@ -33,18 +34,20 @@ const Skills = () => {
   ]
 
   return (
-    <div className='text-center skills'>
-      <h2>My Skills</h2>
-      <p>Here are some of the technologies I work with:</p>
+    <div className='skills section'>
+      <Container>
+        <h2>My Skills</h2>
+        <p>Here are some of the technologies I work with:</p>
 
-      <ul className="list-unstyled">
-        {skills.map((skill, index) => (
-          <li key={index}>
-            <span className="me-2">{skill.icon}</span>
-            <span>{skill.name}</span>
-          </li>
-        ))}
-      </ul>
+        <ul className="list-unstyled">
+          {skills.map((skill, index) => (
+            <li key={index}>
+              <span className="me-2">{skill.icon}</span>
+              <span>{skill.name}</span>
+            </li>
+          ))}
+        </ul>
+      </Container>
     </div>
   );
 };

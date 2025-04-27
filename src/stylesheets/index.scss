@@ -79,6 +79,10 @@ h2{
     color: $color-elephant;
     padding: 1rem !important;
 
+    &.active{
+      color: $color-elephant;
+    }
+
     &:hover {
       background-color: $color-elephant;
       color: white;

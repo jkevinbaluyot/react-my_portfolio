@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap';
 
 const ProjectItem = ({ title, description, link }) => {
   return (
-    <Card>
+    <Card className='mb-4'>
       <Card.Header>Card Title</Card.Header>
       <Card.Body>
         <Card.Text>
