@@ -47,12 +47,26 @@ main{
 
 body{
   font-family: 'FredokaOne';
+  color: $color-elephant;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: 'FredokaOne', sans-serif;
   color: $color-elephant;
 }
+
+h1{
+  @include media-breakpoint-up(lg) {
+    font-size: 5rem;
+  }
+}
+
+h2{
+  @include media-breakpoint-up(lg) {
+    font-size: 4rem;
+  }
+}
+
 
 // Topbar
 
@@ -79,10 +93,15 @@ h1, h2, h3, h4, h5, h6{
 
 .banner{
   height: 100px;
-  min-height: 400px;
+  min-height: 300px;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 400px;
+  }
 
   img{
     height: 100px;
+    filter: grayscale(0.4);
 
     @include media-breakpoint-up(lg) {
       height: 250px;
@@ -94,4 +113,8 @@ h1, h2, h3, h4, h5, h6{
   border-bottom: 4px solid $color-elephant;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+
+  &.alt-bg{
+    background-color: $color-silver_sand;
+  }
 }

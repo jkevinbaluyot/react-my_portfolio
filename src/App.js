@@ -12,8 +12,8 @@ function App() {
     >
       <Topbar />
       <Banner />
-      <Skills />  
       <Projects />
+      <Skills />  
       <Footer />
     </main>
   );
