@@ -55,7 +55,7 @@ const Skills = () => {
           {
             skills.map((skill, index) => (
               <Col key={index} lg={2} md={3} xs={6}>
-                <div className='skill-item rounded text-center py-2 my-1 d-flex align-items-center justify-content-center'>
+                <div className='skill-item rounded text-center p-2 my-1 d-flex align-items-center justify-content-center'>
                   <div>
                     <span className="me-2">{skill.icon}</span>
                     <p className='mb-1 fs-5'>{skill.name}</p>
