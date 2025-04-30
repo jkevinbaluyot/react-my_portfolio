@@ -6,24 +6,29 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Project 1',
-      description: 'Description of project 1',
-      link: 'https://example.com/project1',
+      title: 'PNG Business Website',
+      description: 'Content Management System for the News Website',
+      link: 'https://www.pngbusinessnews.com',
+      tags: ['Ruby on Rails', 'Foundation']
     },
     {
-      title: 'Project 2',
-      description: 'Description of project 2',
-      link: 'https://example.com/project2',
+      title: 'SevenSharp Creatives',
+      description: 'Content Management System for the Blog Website',
+      link: 'https://www.sevensharpcreatives.com/',
+      tags: ['Ruby on Rails', 'Bootstrap']
     },
     {
-      title: 'Project 3',
-      description: 'Description of project 3',
-      link: 'https://example.com/project3',
+      title: 'Course Climber Website',
+      description: 'A  Web-based Course Platform with Stripe Payment',
+      link: 'https://courseclimber.com/',
+      tags: ['Ruby on Rails', 'Foundation', 'Stripe']
     },
     {
-      title: 'Project 4',
-      description: 'Description of project 4',
-      link: 'https://example.com/project3',
+      title: 'Upprovall',
+      description: 'A Project Management Tool',
+      link: 'https://upprovall.com/',
+      tags: ['ReactJs', 'Ruby on Rails', 'Foundation',
+        'Google OAuth']
     },
   ];
 
@@ -45,7 +50,7 @@ const Projects = () => {
                   title={project.title}
                   description={project.description}
                   link={project.link}
-                  
+                  tags={project.tags}
                 />
               </Col>
             ))

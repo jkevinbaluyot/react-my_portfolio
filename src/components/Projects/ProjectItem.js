@@ -1,16 +1,31 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Badge } from 'react-bootstrap';
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
-const ProjectItem = ({ title, description, link }) => {
+const ProjectItem = ({ title, description, link, tags }) => {
   return (
     <Card className='mb-4'>
-      <Card.Header>Card Title</Card.Header>
+      <Card.Header>{title}</Card.Header>
       <Card.Body>
+        <div className='mb-2'>
+          {tags.map((tag, index) => (
+            <Badge key={index} className='me-1'>{tag}</Badge>
+          ))}
+        </div>
+
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {description}
         </Card.Text>
-        <Button variant="link" className='px-0'>Go somewhere</Button>
+      </Card.Body>
+      <Card.Body>
+        <Button 
+          variant="link" 
+          className='px-0 d-flex align-items-center' 
+          href={link} 
+          target='_noblank'
+        >
+          View website <FaArrowUpRightFromSquare className='ms-1' />
+        </Button>
       </Card.Body>
     </Card>
   );
