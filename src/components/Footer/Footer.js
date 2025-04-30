@@ -14,7 +14,7 @@ const Footer = () => {
     {
       name: 'LinkedIn',
       icon: <FaLinkedin />,
-      url: 'www.linkedin.com/in/john-kevin-baluyot-686272235'
+      url: 'https://www.linkedin.com/in/john-kevin-baluyot-686272235'
     },
     {
       name: 'Hashnode',
@@ -32,7 +32,7 @@ const Footer = () => {
         <ul className='footer-links list-unstyled'>
           {footerLinks.map((link, index) => (
             <li key={index} className='d-inline-block'>
-              <a href={link.url} target="_blank" rel="noopener noreferrer">
+              <a href={link.url} target="_blank">
                 <span className='me-2'>{link.icon}</span>
               </a>
             </li>
