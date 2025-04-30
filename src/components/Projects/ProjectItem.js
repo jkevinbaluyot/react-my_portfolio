@@ -23,6 +23,7 @@ const ProjectItem = ({ title, description, link, tags }) => {
           className='px-0 d-flex align-items-center' 
           href={link} 
           target='_noblank'
+          rel="noreferrer'
         >
           View website <FaArrowUpRightFromSquare className='ms-1' />
         </Button>
