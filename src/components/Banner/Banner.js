@@ -10,11 +10,11 @@ const Banner = () => {
       id={'homeSection'}
     >
       <Container className='h-100 d-flex align-items-center justify-content-lg-between flex-column flex-lg-row'>
-        <div>
+        <div className='col-lg-6 col-12 text-center text-lg-start'>
           <h1>John Kevin 
             <span className='small d-block'> Baluyot</span>
           </h1>
-          <p>I'm a web developer.</p>
+          <p>A web developer with over five years of experience designing, developing, and optimizing dynamic websites and web applications. </p>
         </div>
         <div>
           <Image src={ProfileImage} rounded/>
