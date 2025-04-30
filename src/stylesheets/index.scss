@@ -1,0 +1,168 @@
+@import '_color';
+@import '_variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/helpers';
+
+
+@font-face {
+  font-family: "Bazar";
+  src: local("Bazar"), 
+       url("../assets/fonts/Bazar.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald-Regular"), 
+       url("../assets/fonts/Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald-Bold"), 
+       url("../assets/fonts/Oswald-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald-Light"), 
+       url("../assets/fonts/Oswald-Light.ttf") format("truetype");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "FredokaOne";
+  src: local("FredokaOne-Regular"), 
+       url("../assets/fonts/FredokaOne-Regular.ttf") format("truetype");
+}
+
+main{
+  overflow: hidden;
+
+  @include media-breakpoint-up(lg) {
+    border: 8px solid $color-elephant;
+    border-radius: 6px;
+  }
+}
+
+body{
+  font-family: 'FredokaOne';
+  color: $color-elephant;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'FredokaOne', sans-serif;
+  color: $color-elephant;
+}
+
+h1{
+  @include media-breakpoint-up(lg) {
+    font-size: 5rem;
+  }
+}
+
+h2{
+  @include media-breakpoint-up(lg) {
+    font-size: 4rem;
+  }
+}
+
+
+// Topbar
+
+.topbar{
+  font-family: 'FredokaOne';
+  background-color: $color-silver_sand;
+  border-bottom: 4px solid $color-elephant;
+
+  .nav-link{
+    color: $color-elephant;
+    padding: 1rem !important;
+
+    &.active{
+      color: $color-elephant;
+    }
+
+    &:hover {
+      background-color: $color-elephant;
+      color: white;
+    }
+  }
+
+  .navbar-toggler{
+    box-shadow: none;
+    border: none;
+  }
+}
+
+.banner{
+  height: 100px;
+  min-height: 300px;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 400px;
+  }
+
+  img{
+    height: 100px;
+    filter: grayscale(0.4);
+
+    @include media-breakpoint-up(lg) {
+      height: 250px;
+    }
+  }
+}
+
+.section{
+  border-bottom: 4px solid $color-elephant;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  &.alt-bg{
+    background-color: $color-silver_sand;
+  }
+}
+
+.footer{
+  background-color: $color-elephant;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  color: white;
+
+  h2{
+    color:white;
+  }
+
+  a{
+    color: white;
+  }
+
+  svg{
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.card{
+  box-shadow: 8px 8px 0 0 $color-elephant;
+  color: $color-elephant;
+}
+
+.skill-item{
+  background-color: $color-elephant;
+  color: white;
+  min-height: 180px;
+  cursor: pointer;
+
+  svg{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.badge{
+  background-color: $color-elephant;
+  font-weight: normal;
+}

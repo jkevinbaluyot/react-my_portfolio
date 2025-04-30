@@ -1,0 +1,17 @@
+$border-radius: .5rem;
+$border-radius-sm: .3rem;
+$border-radius-lg: .8rem;
+$border-radius-xl: 1rem;
+$border-radius-xxl: 1.3rem;
+$border-radius-pill: 50rem;
+
+$theme-colors: (
+  "dark": $color-elephant
+);
+
+$card-border-radius: 0;
+
+$card-border-width: 4px;
+$card-border-color:  $color-elephant;
+$card-box-shadow:  8px 8px 0 0 $color-elephant;
+$link-color: $color-elephant;
