@@ -14,7 +14,7 @@ const Banner = () => {
           <h1>John Kevin 
             <span className='small d-block'> Baluyot</span>
           </h1>
-          <p>A web developer with over five years of experience designing, developing, and optimizing dynamic websites and web applications. </p>
+          <p>A software developer with over five years of experience designing, developing, and optimizing dynamic websites and web applications. </p>
         </div>
         <div>
           <Image src={ProfileImage} rounded/>
