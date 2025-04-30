@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <main
-      className='mx-0 m-lg-4 rounded'
+      className='mx-0 m-lg-4'
     >
       <Topbar />
       <Banner />

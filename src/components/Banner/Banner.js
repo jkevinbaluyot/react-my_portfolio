@@ -5,7 +5,10 @@ import { Container } from 'react-bootstrap';
 
 const Banner = () => {
   return (
-    <div className="banner section">
+    <div 
+      className="banner section" 
+      id={'homeSection'}
+    >
       <Container className='h-100 d-flex align-items-center justify-content-lg-between flex-column flex-lg-row'>
         <div>
           <h1>John Kevin 

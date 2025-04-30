@@ -33,7 +33,10 @@ const Projects = () => {
   ];
 
   return (
-    <div className='projects section alt-bg'>
+    <div 
+      className='projects section alt-bg'
+      id={'projectsSection'}
+    >
       <Container>
         <h2>Projects</h2>
         <p>Here are some of my projects I worked on:</p>

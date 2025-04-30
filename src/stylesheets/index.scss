@@ -42,6 +42,7 @@ main{
 
   @include media-breakpoint-up(lg) {
     border: 8px solid $color-elephant;
+    border-radius: 6px;
   }
 }
 

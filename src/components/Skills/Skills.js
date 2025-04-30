@@ -46,7 +46,10 @@ const Skills = () => {
   ]
 
   return (
-    <div className='skills section'>
+    <div 
+      className='skills section'
+      id={'skillsSection'}
+    >
       <Container>
         <h2>My Skills</h2>
         <p>Here are some of the technologies I work with:</p>

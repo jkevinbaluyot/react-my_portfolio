@@ -23,7 +23,9 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="footer">
+    <footer 
+      className="footer"
+      id={'footerSection'}>
       <Container>
         <h2>
           Thanks for stopping by.
