@@ -5,6 +5,7 @@ import { FaReact } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
 import { FaBootstrap } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
+import { TbBrandAnsible } from "react-icons/tb";
 
 const Skills = () => {
   const skills =[
@@ -42,6 +43,11 @@ const Skills = () => {
       name: 'Bootstrap',
       description: 'Frontend Toolkit',
       icon: <FaBootstrap />
+    },
+    {
+      name: 'Ansible',
+      description: 'Automation Tool',
+      icon: <TbBrandAnsible />
     },
   ]
 

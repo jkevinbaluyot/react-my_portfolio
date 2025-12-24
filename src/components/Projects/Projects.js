@@ -24,11 +24,23 @@ const Projects = () => {
       tags: ['Ruby on Rails', 'Foundation', 'Stripe']
     },
     {
-      title: 'Upprovall',
+      title: 'Upprovall App',
       description: 'A Project Management Tool',
+      link: 'https://app.upprovall.com/',
+      tags: ['ReactJs', 'Ruby on Rails', 'Bootstrap', 'Google OAuth']
+    },
+
+    {
+      title: 'Upprovall Website',
+      description: 'A Blog Website for Upprovall',
       link: 'https://upprovall.com/',
-      tags: ['ReactJs', 'Ruby on Rails', 'Foundation',
-        'Google OAuth']
+      tags: ['Ruby on Rails', 'Bootstrap']
+    },
+    {
+      title: 'Blog Kevzz',
+      description: 'A Blog Website for my personal projects and experiences',
+      link: 'https://blog.kevzz.dev/',
+      tags: ['Ruby on Rails', 'Bootstrap']
     },
   ];
 
